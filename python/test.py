@@ -39,3 +39,20 @@ y = list(x)
 
 y.append("jackfruit")
 print(y)
+
+a = 5
+b = 6
+c = 7
+
+# Uncomment below to take inputs from the user
+a = float(input('Enter first side: '))
+b = float(input('Enter second side: '))
+c = float(input('Enter third side: '))
+d = float(input('Enter the fourth side'))
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)
